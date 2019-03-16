@@ -15,6 +15,8 @@ import org.junit.jupiter.api.Test;
 
 class funcion2 {
 	
+	//Resuelta
+	
 	/*Ejemplos de funcion*/
 	static Operaciones o = null;
 	static int operacionesRealizadas = 0;
