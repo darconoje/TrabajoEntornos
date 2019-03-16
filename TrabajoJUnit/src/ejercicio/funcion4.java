@@ -10,7 +10,8 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class funcion4 {
-
+	
+	/*Ejemplos de funciones*/
 	static Operaciones o = null;
 	static int operacionesRealizadas = 0;
 	
