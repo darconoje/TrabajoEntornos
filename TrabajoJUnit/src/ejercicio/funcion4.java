@@ -52,12 +52,42 @@ class funcion4 {
 		assertEquals("r nd jd s r nzlz mnz",o.funcion4("Dario Conde Ojeda", "Jose Maria Gonzalez Jimenez"));
 	}
 	
-	@DisplayName("Test de Caja Negra Nombre de los integrantes del grupo")
+	@DisplayName("Test de Caja Negra primer string vacio")
 	@Test
 	public void divisible3() {
-		assertEquals("r nd jd s r nzlz mnz",o.funcion4("Dario Conde Ojeda", "Jose Maria Gonzalez Jimenez"));
+		assertEquals("hl ",o.funcion4("hola", ""));
 	}
 	
+	@DisplayName("Test de Caja Negra segundo string vacio")
+	@Test
+	public void divisible4() {
+		assertEquals(" hl",o.funcion4("", "hola"));
+	}
+		
+	@DisplayName("Test de Caja Negra todo mayusculas")
+	@Test
+	public void divisible5() {
+		assertEquals(" ",o.funcion4("HOLA", "HOLA"));
+	}
 	
+	@DisplayName("Test de Caja Negra todo minusculas")
+	@Test
+	public void divisible6() {
+		assertEquals("hl hl",o.funcion4("hola", "hola"));
+	}
 	
+	@DisplayName("Test de Caja Negra todo vocales")
+	@Test
+	public void divisible7() {
+		assertEquals(" ",o.funcion4("aeiou", "aeiou"));
+	}
+		
+	
+	@DisplayName("Test de Caja Negra sin mayusculas ni vocales")
+	@Test
+	public void divisible8() {
+		assertEquals("qwrty qwrty",o.funcion4("qwrty", "qwrty"));
+	}
+	
+		
 }

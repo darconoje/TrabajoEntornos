@@ -1,3 +1,5 @@
+//ESTA ES LA PRIMERA FUNCION
+
 package ejercicio;
 
 import static org.junit.Assert.assertTrue;
@@ -12,7 +14,8 @@ import org.junit.jupiter.api.Test;
 
 
 class funcion2 {
-
+	
+	/*Ejemplos de funcion*/
 	static Operaciones o = null;
 	static int operacionesRealizadas = 0;
 	

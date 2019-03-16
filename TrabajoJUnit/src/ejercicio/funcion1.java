@@ -1,3 +1,5 @@
+//ESTA ES LA SEGUNDA FUNCION
+
 package ejercicio;
 
 import static org.junit.Assert.assertTrue;

@@ -1,8 +1,6 @@
 package ejercicio;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.jupiter.api.Assertions.*;
-
+import static org.junit.Assert.assertEquals;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -71,9 +69,9 @@ class funcion3 {
 		assertEquals(30,o.funcion3(17,510));
 	}
 	
-	@DisplayName("Test de Caja Blanca Primera condicion incorrecta, segunda incorrecta, tercera correcta ; n= m=")
+	@DisplayName("Test de Caja Blanca Primera condicion incorrecta, segunda incorrecta, tercera correcta ; n=3 m=6")
 	@Test
 	public void divisible6() {
-		assertEquals(30,o.funcion3(17,510));
+		assertEquals(0,o.funcion3(3,6));
 	}
 }
