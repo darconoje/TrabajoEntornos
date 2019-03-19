@@ -53,12 +53,22 @@ class funcion4 {
 		assertEquals("r nd jd s r nzlz mnz",o.funcion4("Dario Conde Ojeda", "Jose Maria Gonzalez Jimenez"));
 	}
 	
-	@DisplayName("Test de Caja Negra Nombre de los integrantes del grupo")
+	@DisplayName("Test de Caja Negra Nombre de los integrantes del grupo primer string vacio")
 	@Test
 	public void divisible3() {
-		assertEquals("r nd jd s r nzlz mnz",o.funcion4("Dario Conde Ojeda", "Jose Maria Gonzalez Jimenez"));
+		assertEquals(" s r nzlz mnz",o.funcion4("", "Jose Maria Gonzalez Jimenez"));
 	}
 	
+	@DisplayName("Test de Caja Negra Nombre de los integrantes del grupo segundo string vacio")
+	@Test
+	public void divisible4() {
+		assertEquals("r nd jd ",o.funcion4("Dario Conde Ojeda", ""));
+	}
 	
+	@DisplayName("Test de Caja Negra Numeros")
+	@Test
+	public void divisible5() {
+		assertEquals("123 456",o.funcion4("123", "456"));
+	}
 	
 }
